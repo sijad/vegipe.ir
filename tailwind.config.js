@@ -1,7 +1,11 @@
 module.exports = {
   purge: ['./components/**/*.tsx', './pages/**/*.tsx'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        body: ['Vazir'],
+      },
+    },
   },
   variants: {},
   plugins: [],
