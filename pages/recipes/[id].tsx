@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useEffect } from 'react';
 import Router from 'next/router';
 import Head from 'next/head';
+import NextLink from 'next/link';
 import type { GetStaticPaths, GetStaticProps } from 'next';
 import { Link, getLink, getLinkCount } from '../../links';
 
@@ -34,9 +35,11 @@ function Recipe({ link }: { link: Link | null }) {
           {' درست کنی چیه؟'}
         </div>
         <div className="mt-10">
-          <a className="text-gray-800 hover:underline" href="/random-recipe">
-            {'نه خوشم نمیاد! یه چی دیگه معرفی کن'}
-          </a>
+          <NextLink href="/random-recipe">
+            <a className="text-gray-800 hover:underline" href="/random-recipe">
+              {'نه خوشم نمیاد! یه چی دیگه معرفی کن'}
+            </a>
+          </NextLink>
         </div>
       </div>
     </>
