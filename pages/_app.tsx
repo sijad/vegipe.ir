@@ -20,6 +20,7 @@ function App({ Component, pageProps }: AppProps) {
           <svg
             className="mr-1 h-5 w-5 text-red-700"
             fill="currentColor"
+            id="heart"
             viewBox="0 0 20 20"
           >
             <path
