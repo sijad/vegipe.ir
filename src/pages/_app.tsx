@@ -1,24 +1,24 @@
-import * as React from 'react';
-import { AppProps } from 'next/app';
-import '../style.css';
+import "../styles/globals.css";
+import "../styles/fonts.css";
+import type { AppProps } from "next/app";
 
-function App({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <Component {...pageProps} />
-      <footer className="w-full text-center absolute py-4 bottom-0 border-on-background">
-        <div className="w-full flex items-center justify-center text-sm">
+      <footer className="absolute bottom-0 py-4 w-full text-center border-on-background">
+        <div className="flex justify-center items-center w-full text-sm">
           <a
             className="hover:underline"
             href="https://github.com/sijad/vegipe.ir"
           >
-            {'در توسعه این وبسایت مشارکت کنید'}
+            {"در توسعه این وبسایت مشارکت کنید"}
           </a>
         </div>
-        <div className="w-full flex items-center justify-center text-sm">
-          {'طراحی شده با'}
+        <div className="flex justify-center items-center w-full text-sm">
+          {"طراحی شده با"}
           <svg
-            className="mr-1 h-5 w-5 text-red-700"
+            className="mr-1 w-5 h-5 text-red-700"
             fill="currentColor"
             id="heart"
             viewBox="0 0 20 20"
@@ -35,4 +35,4 @@ function App({ Component, pageProps }: AppProps) {
   );
 }
 
-export default App;
+export default MyApp;

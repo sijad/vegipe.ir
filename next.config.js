@@ -1,3 +1,7 @@
-const withFonts = require('next-fonts');
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
+}
 
-module.exports = withFonts();
+module.exports = nextConfig

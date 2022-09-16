@@ -1,8 +1,12 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ['./components/**/*.tsx', './pages/**/*.tsx'],
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        body: "Vazir",
+      },
+    },
   },
-  variants: {},
   plugins: [],
 };
